@@ -12,6 +12,9 @@ def go_home():
 def return_404(string = 'string'):
     return render_template('404_handler.html')
 
+@app.route('/statistics')
+def return_stats():
+    return render_template('stats.html')
 
 if __name__ == '__main__':
     app.run(debug=True,

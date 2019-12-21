@@ -84,6 +84,25 @@
     color:#D3E7E9;
     font-family: 'Kalam', cursive;
 }
+.tab{
+    border: 4px solid #30799B;
+    align: center;
+    border-radius: 12px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    font-size: 44px; !important;
+}
+td {
+    border: 4px solid #30799B;
+    padding: 6px;
+}
+thead{
+     background-color: #2C364D;
+}
+.method {
+     background-color: #5F697F;
+}
 body {
     margin: 0;
     background-color: #ABAFB9;
