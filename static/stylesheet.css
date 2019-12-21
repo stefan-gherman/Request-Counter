@@ -58,6 +58,32 @@
     padding: 4px;
     border: 2px solid #D3E7E9;
 }
+.four_but{
+    font-size: 44px !important;
+}
+.sun {
+    background-color: #1F557E;
+    height: 60px;
+    width: 80%;
+    display: table;
+    text-align: center;
+    vertical-align: center;
+    margin:auto;
+    margin-top: 60px;
+    font-size: 60px;
+    left:50%;
+    right: 50%;
+    border: 2px solid white ;
+    border-radius: 12px;
+}
+.not-found{
+    color:#D3E7E9;
+    font-family:'Bangers', cursive;
+}
+.quote_auth{
+    color:#D3E7E9;
+    font-family: 'Kalam', cursive;
+}
 body {
     margin: 0;
     background-color: #ABAFB9;

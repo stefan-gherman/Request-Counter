@@ -8,6 +8,11 @@ def go_home():
     return render_template('index.html')
 
 
+@app.errorhandler(404)
+def return_404(string = 'string'):
+    return render_template('404_handler.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True,
             host='0.0.0.0',
