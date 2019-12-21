@@ -14,15 +14,15 @@
 <div class="get">
     <h1> GET</h1>
     <p> Use this button to perform a GET request.</p>
-    <a><button type="submit" title = "GET" class = "btn">GET Request</button></a>
+    <a href="{{url_for('count_req')}}"><button name="Get" class = "btn"> GET Request</button></a>
     <br>
     <br>
 </div>
 <div class="post">
     <h1>POST</h1>
     <p>Use this button to perform a POST request.</p>
-    <form method = 'post' action = '/request-counter'>
-    <button type="submit" title = "POST" class = "btn"> POST Request</button>
+    <form method = 'POST' action = 'request-counter'>
+    <button name="Post" class = "btn"> POST Request</button>
     </form>
     <br>
 </div>
@@ -34,7 +34,7 @@
     <p>
         Use this button to see stats.
     </p>
-    <a href="{{url_for('return_stats')}}"><button type="submit" title = "STATS" class = "btn">Method Stats</button></a>
+    <a href="{{url_for('return_stats')}}"><button type="button" title = "STATS" class = "btn">Method Stats</button></a>
     <br>
     <br>
 </div>
