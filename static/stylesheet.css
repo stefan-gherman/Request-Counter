@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bangers|Kalam&display=swap');
+
+
+.title {
+    background-color: #5F697F;
+    font-family:'Bangers', cursive;
+    font-size: 60px;
+    height: 80px;
+    width: 100%;
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+    color: #D3E7E9;
+}
+
+.get {
+    background-color: #455069;
+    color: #D3E7E9;
+    height: 60px;
+    width: 100%;
+    display: table;
+    text-align: center;
+    vertical-align: center;
+    font-size: 20px;
+    font-family: 'Kalam', cursive;;
+}
+
+.post {
+    background-color: #2C364D;
+    color: #D3E7E9;
+    height: 60px;
+    width: 100%;
+    display: table;
+    text-align: center;
+    vertical-align: center;
+    font-size: 20px;
+    font-family: 'Kalam', cursive;;
+}
+
+.stats {
+    background-color: #1F557E;
+    color: #D3E7E9;
+    height: 60px;
+    width: 100%;
+    display: table;
+    text-align: center;
+    vertical-align: center;
+    font-size: 20px;
+    font-family: 'Kalam', cursive;
+}
+.btn {
+    background-color: #5F697F;
+    font-size: 18px;
+    font-family: 'Kalam', cursive;
+    color: #D3E7E9;
+    border-radius: 12px;
+    padding: 4px;
+    border: 2px solid #D3E7E9;
+}
+body {
+    margin: 0;
+    background-color: #ABAFB9;
+}
