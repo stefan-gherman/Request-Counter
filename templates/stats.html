@@ -21,41 +21,17 @@
 
         </thead>
         <tbody>
+        {% for elem in method_count %}
         <tr>
             <td class = "method">
-                GET
+             {{elem}}
             </td>
-            <td class="method">
-                24
-            </td>
-        </tr>
 
-        <tr>
             <td class="method">
-                GET
-            </td>
-            <td class="method">
-                24
+                {{method_count[elem]}}
             </td>
         </tr>
-
-        <tr>
-            <td class="method">
-                GET
-            </td>
-            <td class="method">
-                24
-            </td>
-        </tr>
-
-        <tr>
-            <td class="method">
-                GET
-            </td>
-            <td class="method">
-                24
-            </td>
-        </tr>
+        {% endfor %}
         </tbody>
     </table>
 <br>
