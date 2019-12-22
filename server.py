@@ -3,8 +3,7 @@ import helper as helper
 
 app = Flask(__name__)
 
-method_count = {'GET': 0, 'POST': 0, 'PUT': 0, 'DELETE': 0}
-
+filename = './data/counts.txt'
 
 @app.route('/')
 @app.route('/index', methods=['GET', 'POST', 'DELETE', 'PUT'])
@@ -20,15 +19,16 @@ def return_404(string='string'):
 
 @app.route('/statistics')
 def return_stats():
+    method_count = helper.create_dict_from_file(filename)
     return render_template('stats.html', method_count=method_count)
 
 @app.route('/request-counter', methods=['GET', 'POST', 'DELETE', 'PUT'])
 def count_req():
-    global method_count
+    method_count = helper.create_dict_from_file(filename)
     if request.method in method_count.keys():
         method_count[request.method] += 1
         method_count = helper.sort_dict(method_count)
-        print(request.method, method_count[request.method])
+        helper.write_dict_to_file(method_count, filename)
     return redirect(request.referrer)
 if __name__ == '__main__':
     app.run(debug=True,
