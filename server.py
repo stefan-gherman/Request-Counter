@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 filename = './data/counts.txt'
 
+
 @app.route('/')
 @app.route('/index', methods=['GET', 'POST', 'DELETE', 'PUT'])
 def go_home():
-
     return render_template('index.html')
 
 
@@ -22,6 +22,7 @@ def return_stats():
     method_count = helper.create_dict_from_file(filename)
     return render_template('stats.html', method_count=method_count)
 
+
 @app.route('/request-counter', methods=['GET', 'POST', 'DELETE', 'PUT'])
 def count_req():
     method_count = helper.create_dict_from_file(filename)
@@ -30,9 +31,9 @@ def count_req():
         method_count = helper.sort_dict(method_count)
         helper.write_dict_to_file(method_count, filename)
     return redirect(request.referrer)
+
+
 if __name__ == '__main__':
     app.run(debug=True,
             host='0.0.0.0',
             port=7000)
-
-

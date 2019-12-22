@@ -1,7 +1,7 @@
 <!doctype HTML>
 <html>
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>Stats</title>
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'stylesheet.css')}}">
 </head>
@@ -12,19 +12,19 @@
 <div class="get">
     <br>
     <br>
-    <table title = "Method Stats" class="tab" align="center">
+    <table title="Method Stats" class="tab" align="center">
         <thead>
-            <td>Method</td>
+        <td>Method</td>
 
 
-            <td>Count</td>
+        <td>Count</td>
 
         </thead>
         <tbody>
         {% for elem in method_count %}
         <tr>
-            <td class = "method">
-             {{elem}}
+            <td class="method">
+                {{elem}}
             </td>
 
             <td class="method">
@@ -34,8 +34,10 @@
         {% endfor %}
         </tbody>
     </table>
-<br>
-    <a href="{{url_for('go_home')}}"><button title = "Go Back" class="btn">Return Home</button></a>
+    <br>
+    <a href="{{url_for('go_home')}}">
+        <button title="Go Back" class="btn">Return Home</button>
+    </a>
     <br>
     <br>
 </div>

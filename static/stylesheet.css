@@ -1,10 +1,9 @@
-
 @import url('https://fonts.googleapis.com/css?family=Bangers|Kalam&display=swap');
 
 
 .title {
     background-color: #5F697F;
-    font-family:'Bangers', cursive;
+    font-family: 'Bangers', cursive;
     font-size: 60px;
     height: 80px;
     width: 100%;
@@ -49,6 +48,7 @@
     font-size: 20px;
     font-family: 'Kalam', cursive;
 }
+
 .btn {
     background-color: #5F697F;
     font-size: 18px;
@@ -58,9 +58,11 @@
     padding: 4px;
     border: 2px solid #D3E7E9;
 }
-.four_but{
+
+.four_but {
     font-size: 44px !important;
 }
+
 .sun {
     background-color: #1F557E;
     height: 60px;
@@ -68,41 +70,49 @@
     display: table;
     text-align: center;
     vertical-align: center;
-    margin:auto;
+    margin: auto;
     margin-top: 60px;
     font-size: 60px;
-    left:50%;
+    left: 50%;
     right: 50%;
-    border: 2px solid white ;
+    border: 2px solid white;
     border-radius: 12px;
 }
-.not-found{
-    color:#D3E7E9;
-    font-family:'Bangers', cursive;
+
+.not-found {
+    color: #D3E7E9;
+    font-family: 'Bangers', cursive;
 }
-.quote_auth{
-    color:#D3E7E9;
+
+.quote_auth {
+    color: #D3E7E9;
     font-family: 'Kalam', cursive;
 }
-.tab{
+
+.tab {
     border: 4px solid #30799B;
     align: center;
     border-radius: 12px;
     text-align: center;
     align-content: center;
     align-items: center;
-    font-size: 44px; !important;
+    font-size: 44px;
+!important;
 }
+
 td {
     border: 4px solid #30799B;
     padding: 6px;
 }
-thead{
-     background-color: #2C364D;
+
+thead {
+    background-color: #2C364D;
 }
+
 .method {
-     background-color: #5F697F;
+    background-color: #5F697F;
 }
+
 body {
     margin: 0;
     background-color: #ABAFB9;
